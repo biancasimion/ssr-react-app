@@ -1,0 +1,276 @@
+body {
+  font-size: 16px;
+}
+
+.image img {
+  width: 100%;
+}
+
+.image__credits {
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.image__shop-btn {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  position: relative;
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+  cursor: pointer;
+  outline-style: none;
+}
+
+.image__shop-btn:after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    margin: 5px 10px;
+    display: flex;
+  }
+  .container.full {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-direction: column; */
+  }
+  .container.full .column {
+    width: 100%;
+  }
+
+  .container.centered .column {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .hero__parallax {
+    background-image: url("../assets/w600_parallax_mobile_image.jpeg");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero__title {
+    color: #ffffff;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+  }
+
+  .hero__title h1{
+    text-align: left;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Arapey', serif;
+    font-weight: 100;
+    margin-top: 0;
+  }
+
+  .hero__title h5{
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin-bottom: 0;
+    padding-left: 8px;
+  }
+  .hero__credits {
+    color: #ffffff;
+    position: absolute;
+    bottom: 12%;
+    right: 8%;
+    text-align: right;
+  }
+
+  .hero__credits h5 {
+    color: #ffffff;
+    font-family: 'Arapey', serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  .hero__with {
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+  .hero__author {
+    margin-top: 0;
+  }
+
+  .shopTheLook-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .shopTheLook__image {
+    width: 20%;
+  }
+  
+  .item {
+    height: 81px;
+    background: #000000;
+  }
+
+  .subhead::first-letter  {
+    font-weight: bold;
+    font-size: 30px;
+    float: left;
+    margin-top: 10px;
+  }
+
+  .story__quote {
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: 100;
+  }
+
+  .story__copy,
+  .copy  {
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 951px) {
+  .container {
+    margin: 30px 100px;
+    display: flex;
+  }
+
+  .container.full {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .container.centered {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container.full .column {
+    width: 49%;
+  }
+
+  .container.centered .column {
+    margin-bottom: 10px;
+    width: 49%;
+  }
+
+  .hero__parallax {
+    background-image: url("../assets/w1900_parallax_mobile_image.jpeg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero__title {
+    color: #ffffff;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+  }
+
+  .hero__title h1{
+    text-align: left;
+    font-size: 90px;
+    text-transform: uppercase;
+    font-family: 'Arapey', serif;
+    font-weight: 100;
+    margin-top: 0;
+  }
+
+  .hero__title h5{
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin-bottom: 0;
+    padding-left: 8px;
+  }
+
+  .hero__credits {
+    color: #ffffff;
+    position: absolute;
+    bottom: 12%;
+    right: 8%;
+    text-align: right;
+  }
+
+  .hero__credits h5 {
+    color: #ffffff;
+    font-family: 'Arapey', serif;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 100;
+  }
+
+  .hero__with {
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+  .hero__author {
+    margin-top: 0;
+  }
+  .subhead::first-letter  {
+    font-weight: bold;
+    font-size: 90px;
+    float: left;
+    margin-top: 30px;
+  }
+
+  .story__quote {
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: 100;
+  }
+
+  .story__copy,
+  .copy  {
+    line-height: 26px;
+  }
+
+  .image {
+    position: sticky;
+    top: 0;
+    margin-top: 42px;
+  }
+
+  .shopTheLook-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .shopTheLook__image {
+    width: 20%;
+  }
+  
+  .item {
+    height: 81px;
+    background: #000000;
+  }
+}
+
