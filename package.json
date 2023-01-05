@@ -41,7 +41,7 @@
     "postcss-loader": "^2.0.6",
     "react-test-renderer": "^16.10.2",
     "url-loader": "^2.2.0",
-    "webpack": "^3.1.0"
+    "webpack": "^5.75.0"
   },
   "bugs": {
     "url": "https://github.com/biancasimion/ssr-react-app/issues"
